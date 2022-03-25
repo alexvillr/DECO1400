@@ -1,0 +1,36 @@
+body {
+	margin: 2em;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+header, nav, aside, article, footer {
+	border: 2px solid red;
+}
+
+header {
+	background-color: #fdf6ce;
+}
+
+nav {
+	background-color: #ffdae5;
+}
+
+aside {
+	background-color: #ddd7d7;
+}
+
+article {
+	background-color: #d7eaf8;
+}
+
+footer {
+	background-color: #dcfff6;
+}
+
+.byline {
+	font-style: italic;
+}
+
+.more-link {
+	font-weight: bold;
+}
