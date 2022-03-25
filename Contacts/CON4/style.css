@@ -1,5 +1,7 @@
 body {
 	margin: 2em;
+	border: 2px solid yellowgreen;
+	padding: 3em;
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
@@ -17,10 +19,12 @@ nav {
 
 aside {
 	background-color: #ddd7d7;
+	box-sizing: 40%;
 }
 
 article {
 	background-color: #d7eaf8;
+	overflow: auto;
 }
 
 footer {
@@ -33,4 +37,40 @@ footer {
 
 .more-link {
 	font-weight: bold;
+}
+
+table {
+	border: 3px solid;
+	border-collapse: collapse;
+}
+
+th {
+	font-weight: bold;
+	border: 2.5px solid
+}
+
+td {
+	border: 1px solid;
+}
+
+.mugshot {
+	overflow: auto;
+}
+
+article img{
+	float: left;
+	max-width: 25%;
+	max-height: 25%;
+	margin: 5px;
+	padding: 2em;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+
+}
+
+section {
+	box-sizing: 60%;
 }
