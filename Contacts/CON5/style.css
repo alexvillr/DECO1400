@@ -48,3 +48,17 @@ figcaption {
 #chapter-2 figure {
 	float: right;
 }
+
+container {
+	display: flex;
+}
+  
+  item {
+	flex-grow: 1;
+	height: 100px;
+}
+  
+  item + item {
+	margin-left: 2%;
+}
+  
