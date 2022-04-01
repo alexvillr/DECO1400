@@ -1,0 +1,50 @@
+/* General */
+
+body {
+	margin: 3em;
+	font-size: 18px;
+	background-color: white;
+}
+
+header, nav, #contact-form, footer {
+	background: #eee;
+	padding: 1em 2em;
+	border-radius: 10px;
+	margin-top: 1em;
+}
+
+/* Chapters */
+
+#chapters article {
+	overflow: hidden; /* To clear the floated image */
+	border: 2px solid #888;
+	padding: 1em 2em;
+	border-radius: 10px;
+	margin-top: 1em;
+}
+
+figure {
+	max-width: 150px;
+	margin: 0;
+}
+
+figure img {
+	display: block;
+	max-width: 100%;
+}
+
+figcaption {
+	margin-top: 5px;
+	color: #888;
+	font-style: italic;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+#chapter-1 figure {
+	float: left;
+}
+
+#chapter-2 figure {
+	float: right;
+}
