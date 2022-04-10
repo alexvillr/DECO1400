@@ -2,3 +2,53 @@
 	margin: 0;
 	padding: 0;
 }
+
+#main-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: red;
+	width: 100%;
+	text-align: center;
+}
+
+.current {
+	background: yellow;
+	margin: 5px;
+	border-radius: 5px;
+}
+
+#page-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-image:image(src="images/background-overview.jpg");
+}
+
+.banner-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: lime;
+	width: 100%;
+	text-align: center;
+}
+
+.banner-title ::backdrop {
+	opacity: 25%;
+}
+
+#logo img {
+	width: 200px;
+}
+
+.cta-button {
+	background: blue;
+	color: red;
+	width: fit-content;
+	padding: 10px;
+	border-radius: 5px;
+	text-align: center;
+	margin: 50px;
+}
