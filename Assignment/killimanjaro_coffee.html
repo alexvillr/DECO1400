@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Products</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="left_header">
+                <a href="index.html">Home</a>
+                <a href="brew_guides.html">Brew Guides</a>
+                <div id="current">
+                    <a href="products.html">Products</a>
+                </div>
+            </div>
+            <div class="right_header">
+                <a href="cart.html"><img src="Images/cart_icon.png" alt=""></a>
+                <a href="login_register.html">Login/Register</a>
+            </div>
+        </header>
+
+        <div class="product_container">
+            <div id="first_third">
+                <img src="Images/coffee_product.jpg" alt="Mt Killimanjaro">
+                
+                <div class="product_amount_info">
+
+                    <div id="product_name">Single Origin Tanzania Mt Killimanjaro</div>
+
+                    <div id="price">$20</div>
+
+                    <form>
+                        <input type="number" placeholder="Quantity" id="quant">
+                        <input type="button" value="Add to Cart" onclick="addToCart()">
+                    </form>
+
+                    <select id="amount_select" name="Amount">
+                        <option>200g</option>
+                        <option>500g</option>
+                        <option>1kg</option>
+                    </select>
+
+                    <select id="grind_select" name="Grind">
+                        <option>Whole Beans</option>
+                        <option>Filter</option>
+                        <option>Espresso</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="middle_third">
+                Description
+
+                <p>The Kilimanjaro region produces coffee with a mild acidity, but still a fine body and aftertaste of black currant. It has a sweetness of golden honey and a smooth texture. The Tanzania Kilimanjaro coffee plantation is one of the largest and most popular for single origin coffee and for good reason. The plantation is located in the shade of Mt Kilimanjaro which gives it a uniquly cool climate considering the region. Overall, this is a fantastic single origin to use for your black coffees filter or espresso and will make your morning coffee that much more special.</p>            </div>
+            <div id="final_third">
+                Specs
+                <p>1kg of specialty single origin coffee in a bag.</p>
+                <p>Offered as whole beans or ground.</p>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footer_buttons">
+                <a href="https://www.facebook.com"><img src="Images/facebook_logo.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com"><img src="Images/instagram_logo.png" alt="Instagram"></a>
+                <a href="https://www.twitter.com"><img src="Images/twitter_logo.png" alt="Twitter"></a>
+                <a href="contact_us.html">Contact Us</a>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

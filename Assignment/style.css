@@ -1,0 +1,556 @@
+/* overall wanted layout */
+
+body { 
+    background-color: #362312;
+    margin: 0px;
+    height: 100%;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* layout for header */
+
+header {
+    background-color: #4B382A;
+    font-size: 2vw;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color:#fffdd0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+header #current {
+    border: 2px solid;
+    border-color: #fffdd0;
+}
+
+header img {
+    height: 2.5vw;
+    width: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.left_header {
+    color: #fffdd0;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.right_header {
+    float: right;
+    padding-right: 10px;
+    color: #fffdd0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        font-size: 3.5vw;
+        text-align: center;
+    }
+
+    header img {
+        height: 4.5vw;
+    }
+}
+
+/* layout for footer */
+
+footer {
+    background: #4B382A;
+    color: #fffdd0;
+    font-size: 2vw;
+    width: 100%;
+    bottom: 0;
+    float: bottom;
+}
+
+.footer_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: left, center;
+    align-items: center;
+}
+
+.footer_buttons img {
+    height: 2.5vw;
+    width: auto;
+    flex-grow:0;
+    flex-shrink:0;
+}
+
+.footer_buttons a {
+    color: #fffdd0;
+
+}
+
+.footer #current {
+    border: 2px solid;
+    border-color: #fffdd0;
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        font-size: 3.5vw;
+        text-align: center;
+    }
+
+    .footer img {
+        height: 4.5vw;
+    }
+}
+
+/* css for homepage */
+
+.index_container {
+    min-height: calc(100vh - 3.42vw);
+}
+
+.banner {
+    background-image: url(../Images/coffee_banner.jpg);
+    color:#fffdd0;
+    background-size: cover;
+    text-align: left;
+    font-size: 5vw;
+    text-shadow: 5px;
+    padding: 20px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.preamble {
+    color: #fffdd0;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 21px;
+}
+
+.display_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.display_buttons img {
+    width: 35vw;
+    height: 25.375vw;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.display_buttons a {
+    height: calc(25.375vw + 55px);
+}
+
+@media screen and (max-width: 800px) {
+    .display_buttons {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .display_buttons img {
+        width: 75vw;
+        height: 54.375vw;
+        object-fit: cover;
+        display: inline-block;
+    }
+
+    .display_buttons a {
+        height: calc(54.375vw + 55px);
+        margin-bottom: 40px;
+    }
+}
+
+.imgtext {
+    text-align: center;
+    color: #fffdd0;
+    border: 1px solid;
+}
+
+/* css for brew guides */
+
+.guide_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: calc(100vh - 3.42vw);
+    font-size: 2vw;
+    margin-top: 20px;
+}
+
+.guide_container a {
+    margin-bottom: 40px;
+}
+
+.guide_container img {
+    object-fit: cover;
+    display: inline-block;
+    width: 40vw;
+    height: 29vw;
+}
+
+@media screen and (max-width: 800px) {
+    .guide_container {
+        min-height: calc(100vh - 3.42vw);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+        font-size: 4vw;
+    }
+    
+    .guide_container a {
+        height: calc(54.375vw + 55px);
+        margin-bottom: 40px;
+        margin-top: 40px;
+        width: calc(75vw + 2px);
+    }
+    
+    .guide_container img {
+        width: 75vw;
+        height: 54.375vw;
+        object-fit: cover;
+        display: inline-block;
+    }
+}
+
+/* brew guide css */
+
+.brew_guide_container {
+    color: #fffdd0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 20px;
+    min-height: calc(100vh - 20px);
+    padding-bottom: 40px;
+}
+
+.brew_guide_preamble_and_image {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.brew_guide_preamble_and_image span {
+    background-color: #492000;
+    padding: 10px;
+    width: 41vw;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.brew_guide_preamble_and_image img {
+    width: 41vw;
+    height: auto;
+    border-radius: 20px;
+}
+
+.brew_guide_container ol {
+    background-color: #492000;
+    margin: 40px;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+}
+
+/* guide coming soon css */
+.guide_coming_soon {
+    color: #fffdd0;
+    text-align: center;
+    margin-top: calc((100vh - 40px) / 3);
+    margin-right: calc((100vw - 40px) / 3);
+    margin-left: calc((100vw - 40px) / 3);   
+    font-size: 50px;
+    min-height: calc(100vh - 350px);
+}
+
+@media screen and (max-width: 800px) {
+    .guide_coming_soon {
+        color: #fffdd0;
+        font-size: 5vw;
+        margin: 20px;
+    }
+}
+
+/* css for products */
+
+.products_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: calc(100vh - 3.42vw);
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+
+.products_container img {
+    object-fit:cover;
+    display: inline-block;
+    width: 678px;
+    height: 353px;
+}
+
+.products_container a {
+    width: 680px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .products_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        min-height: calc(100vh - 3.42vw);
+        padding-bottom: 40px;
+        font-size: 20px;
+    }
+
+    .products_container a {
+        height: calc(54.375vw + 55px);
+        margin-bottom: 40px;
+        margin-top: 40px;
+        width: calc(75vw + 2px);
+    }
+
+    .products_container img {
+        width: 75vw;
+        height: 54.375vw;
+        object-fit: cover;
+        display: inline-block;
+    }
+}
+
+/* product submenu css */
+.product_submenu_container {
+    color: #fffdd0;
+    font-size: 50px;
+    min-height: calc(100vh - 6.42vw);
+}
+
+.product_submenu_container span {
+    padding: 40px;
+}
+
+.coffee_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 2vw;
+    margin-top: 20px;
+}
+
+.coffee_list a {
+    margin-bottom: 40px;
+}
+
+.coffee_list img {
+    object-fit: cover;
+    display: inline-block;
+    width: 40vw;
+    height: 29vw;
+}
+
+/* product css */
+.product_container {
+    color: #fffdd0;
+    min-height: calc(100vh - 6.42vw);
+}
+
+.product_container #first_third {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.product_container #first_third img {
+    width: 20vw;
+    border: 1px solid;
+    border-color: #fffdd0;
+    border-radius: 5px;
+}
+
+.product_container #middle_third, .product_container #final_third{
+    background-color: #48260D;
+    border: 1px solid;
+    border-color: #fffdd0;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+
+/* product coming soon css */
+.product_coming_soon {
+    color: #fffdd0;
+    text-align: center;
+    font-size: 5vw;
+    margin: 20px;
+    min-height: calc(100vh - 11.42vw);
+}
+
+@media screen and (max-width: 800px) {
+    .product_coming_soon {
+        color: #fffdd0;
+        font-size: 5vw;
+        margin: 20px;
+    }
+}
+
+/* css for contact us page */
+
+.contact_container {
+    color: #fffdd0;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    min-height: calc(100vh - 42px);
+    flex-wrap: wrap;
+}
+
+.contact_left {
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+    text-align: center;
+    padding: 50px;
+    align-items: center;
+}
+
+.contact_right {
+    min-width: 70vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.contact_container img {
+    width: 540px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.social_box {
+    display: flex;
+    align-items: center;
+}
+
+.social_box span {
+    padding: 10px;
+}
+
+.social_box img {
+    width: 134px;
+    height: 134px;
+    object-fit: contain;
+}
+
+/* css for login/register */
+
+.login_container {
+    min-height: calc(100vh - 244px);
+}
+
+.login_register_card {
+    margin: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: left;
+}
+
+.login_register_card form {
+    color: #fffdd0;
+    border: 1px solid;
+    background-color:#48260D;
+    border-color: #fffdd0;
+    padding-right: 200px;
+    padding-bottom: 200px;
+    padding-left: 20px;
+}
+
+/* account css */
+
+.account_container {
+    height: calc(100vh - 40px);
+    color: #fffdd0;
+}
+
+.account_container p {
+    padding-left: 40px;
+}
+
+.account_information_container {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    background-color: #48260D;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-wrap: wrap;
+}
+
+.general_info {
+    padding-right: 35vw;
+    padding-left: 30px;
+}
+
+.address_info {
+    padding-right: 35vw;
+}
+
+.payment_information {
+    padding:30px;
+}
+
+.edit_button {
+    padding-top: 200px;
+}
+
+@media screen and (max-width: 800px) {
+    .account_information_container {
+        display: flex;
+        padding: 20px;
+        margin: 20px;
+        background-color: #48260D;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .general_info, .payment_information, .address_info {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* css for cart */
+.cart_container {
+    display: flex;
+    flex-direction: column;
+    color: #fffdd0;
+}
+
+.current_cart {
+    background-color: #48260D;
+}
